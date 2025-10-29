@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Course Home Page for Web and Computer Programming Certificate">
-  <meta name="author" content="Idehen Nosa" >
+  <meta name="author" content="Idehen Nosa">
   <title>Course Work - WDD231</title>
+  
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="styles/style.css">
+  
   <!-- JavaScript -->
   <script src="scripts/script.js" defer></script>
 </head>
@@ -19,9 +22,8 @@
       <img src="images/profile.jpg" alt="Profile picture of Idehen Nosa" class="profile-image">
       <span class="name">Idehen Nosa</span>
     </div>
-
     <nav id="navbar">
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
       <ul class="menu" id="menu">
         <li><a href="#" class="active" title="Home">Home</a></li>
         <li><a href="https://www/">Chamber</a></li>
@@ -45,23 +47,20 @@
 
       <div class="lagos-container">
         <h2>Lagos, Nigeria</h2>
-        <img src="images/country.jpg" alt="Beautiful view of  Nigeria" class="lagos-image">
+        <img src="images/country.jpg" alt="Beautiful view of Nigeria" class="lagos-image">
         <p>Lagos, Nigeria — a hub of creativity and innovation in West Africa.</p>
       </div>
     </section>
 
     <!-- ===== Courses Section ===== -->
-    <section>
+    <section class="courses-section">
       <h2>Web and Computer Programming</h2>
-
       <div id="filter-buttons">
-        <button onclick="filterCourses('all')">All Courses</button>
-        <button onclick="filterCourses('WDD')">WDD Courses</button>
-        <button onclick="filterCourses('CSE')">CSE Courses</button>
+        <button id="all-btn">All Courses</button>
+        <button id="wdd-btn">WDD Courses</button>
+        <button id="cse-btn">CSE Courses</button>
       </div>
-
       <div id="course-list"></div>
-
       <p id="total-credits">Total Credits: 0</p>
     </section>
 

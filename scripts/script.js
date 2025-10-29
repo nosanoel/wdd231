@@ -1,4 +1,3 @@
-// ====== Course Data ======
 const courses = [
   { code: "CSE 110", name: "Introduction to Programming", credits: 2, type: "CSE", completed: false },
   { code: "WDD 130", name: "Web Fundamentals", credits: 2, type: "WDD", completed: true },
@@ -8,43 +7,55 @@ const courses = [
   { code: "WDD 231", name: "Frontend Web Development I", credits: 2, type: "WDD", completed: true }
 ];
 
-const courseList = document.getElementById("course-list");
-const totalCreditsElement = document.getElementById("total-credits");
+document.addEventListener("DOMContentLoaded", () => {
+  const courseList = document.getElementById("course-list");
+  const totalCreditsElement = document.getElementById("total-credits");
+  const hamburger = document.getElementById("hamburger");
 
-// ====== Display Courses ======
-function displayCourses(courseArray) {
-  courseList.innerHTML = courseArray.map(course => `
-    <div class="course-card ${course.completed ? 'completed' : ''}">
-      <h3>${course.name} (${course.code})</h3>
-      <p><strong>Credits:</strong> ${course.credits}</p>
-    </div>
-  `).join('');
-}
+  // Display courses dynamically
+  function displayCourses(courseArray) {
+    courseList.innerHTML = courseArray
+      .map(course => `
+        <div class="course-card ${course.completed ? 'completed' : ''}">
+          <h3>${course.name} (${course.code})</h3>
+          <p><strong>Credits:</strong> ${course.credits}</p>
+        </div>
+      `)
+      .join('');
+  }
 
-// ====== Filter Courses ======
-function filterCourses(category) {
-  const filtered = category === 'all'
-    ? courses
-    : courses.filter(c => c.code.startsWith(category));
-  displayCourses(filtered);
-  updateCredits(filtered);
-}
+  // Filter courses
+  function filterCourses(category) {
+    const filtered = category === 'all' ? courses : courses.filter(c => c.code.startsWith(category));
+    displayCourses(filtered);
+    updateCredits(filtered);
+  }
 
-// ====== Calculate Total Credits ======
-function updateCredits(courseArray) {
-  const total = courseArray.reduce((sum, c) => sum + c.credits, 0);
-  totalCreditsElement.textContent = `Total Credits: ${total}`;
-}
+  // Update total credits
+  function updateCredits(courseArray) {
+    const total = courseArray.reduce((sum, c) => sum + c.credits, 0);
+    totalCreditsElement.textContent = `Total Credits: ${total}`;
+  }
 
-// ====== Responsive Menu Toggle ======
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("show");
-}
+  // Responsive menu toggle
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("open");
+  }
 
-// ====== Footer Info ======
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+  // Footer info
+  function updateYearAndLastModified() {
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  }
 
-// ====== Initialize ======
-displayCourses(courses);
-updateCredits(courses);
+  // Event listeners
+  hamburger.addEventListener("click", toggleMenu);
+  document.getElementById("all-btn").addEventListener("click", () => filterCourses("all"));
+  document.getElementById("wdd-btn").addEventListener("click", () => filterCourses("WDD"));
+  document.getElementById("cse-btn").addEventListener("click", () => filterCourses("CSE"));
+
+  // Initialize page
+  displayCourses(courses);
+  updateCredits(courses);
+  updateYearAndLastModified();
+});
