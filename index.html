@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Course Home Page for Web and Computer Programming Certificate">
+  <meta name="author" content="Idehen Nosa" >
+  <title>Course Work - WDD231</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" >
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/profile.jpg" alt="Profile picture of Idehen Nosa" class="profile-image">
+      <span class="name">Idehen Nosa</span>
+    </div>
+
+    <nav id="navbar">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="#" class="active" title="Home">Home</a></li>
+        <li><a href="https://www/">Chamber</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Course Work Section ===== -->
+    <section class="flex-container">
+      <div class="course-work-container">
+        <h1>Course Work</h1>
+        <ul>
+          <li>Frontend Web Development</li>
+          <li>Programming with Classes</li>
+          <li>Dynamic Web Applications</li>
+        </ul>
+      </div>
+
+      <div class="lagos-container">
+        <h2>Lagos, Nigeria</h2>
+        <img src="images/country.jpg" alt="Beautiful view of  Nigeria" class="lagos-image">
+        <p>Lagos, Nigeria — a hub of creativity and innovation in West Africa.</p>
+      </div>
+    </section>
+
+    <!-- ===== Courses Section ===== -->
+    <section>
+      <h2>Web and Computer Programming</h2>
+
+      <div id="filter-buttons">
+        <button onclick="filterCourses('all')">All Courses</button>
+        <button onclick="filterCourses('WDD')">WDD Courses</button>
+        <button onclick="filterCourses('CSE')">CSE Courses</button>
+      </div>
+
+      <div id="course-list"></div>
+
+      <p id="total-credits">Total Credits: 0</p>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="footer-info">
+      <h2>Contact Information</h2>
+      <p>If you have any questions, feel free to reach out to me!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
