@@ -59,3 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCredits(courses);
   updateYearAndLastModified();
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const allBtn = document.getElementById("all-btn");
+  const wddBtn = document.getElementById("wdd-btn");
+  const cseBtn = document.getElementById("cse-btn");
+
+  allBtn.addEventListener("click", () => filterCourses("all"));
+  wddBtn.addEventListener("click", () => filterCourses("WDD"));
+  cseBtn.addEventListener("click", () => filterCourses("CSE"));
+});
