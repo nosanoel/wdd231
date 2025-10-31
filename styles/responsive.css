@@ -5,9 +5,8 @@ body {
   padding: 0;
 }
 
-/* ============================
-   Media Query for PC Screens
-   ============================ */
+/* 
+   Media Query for PC Screens*/
 @media screen and (min-width: 1024px) {
   .header-content {
     display: flex;
