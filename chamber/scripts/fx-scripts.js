@@ -38,7 +38,7 @@ function displayMembers(members) {
     cardsContainer.appendChild(section);
   });
 
-  // 🔥 Animate cards when they appear
+  // Animate cards when they appear
   const cards = document.querySelectorAll("#cards section");
   const observer = new IntersectionObserver(
     entries => {

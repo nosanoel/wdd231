@@ -186,4 +186,11 @@ footer {
   transform: scale(1.1);
 }
 
+.profile-image.logo {
+  width: 120px;  
+  height: auto;  
+  border-radius: 8px; width: 12vw;      
+  max-width: 180px;  
+  height: auto;
+}
 
