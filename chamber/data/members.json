@@ -4,7 +4,7 @@
       "name": "FX Global Studios",
       "address": "45 Market Blvd, Lagos, Nigeria",
       "phone": "(+234) 701-123-4567",
-      "website": "https://fxglobalstudios.com",
+      "website": "https://vfxglobalstudios.com",
       "image": "images/fx1.webp",
       "membership": "Gold"
     },
@@ -28,7 +28,7 @@
       "name": "FX Insight Motion",
       "address": "240 King St, Ibadan, Nigeria",
       "phone": "(+234) 806-555-6789",
-      "website": "https://fxinsightmotion.com",
+      "website": "https://vfxinsightmotion.com",
       "image": "images/fx4.webp",
       "membership": "Gold"
     },
@@ -52,7 +52,7 @@
       "name": "PixelPro FX",
       "address": "99 Unity Rd, Kano",
       "phone": "(+234) 805-888-4444",
-      "website": "https://pixelprofx.com",
+      "website": "https://pixelprovfx.com",
       "image": "images/fx7.webp",
       "membership": "Bronze"
     },
@@ -60,7 +60,7 @@
       "name": "MotionForge Studio",
       "address": "55 Creative Ave, Enugu, Nigeria",
       "phone": "(+234) 808-444-5555",
-      "website": "https://motionforge.com",
+      "website": "https://vfxmotionforge.com",
       "image": "images/fx8.webp",
       "membership": "Gold"
     },
@@ -68,7 +68,7 @@
       "name": "EpicFrame Labs",
       "address": "18 Ocean Rd, Port Harcourt",
       "phone": "(+234) 809-222-9999",
-      "website": "https://epicframe.com",
+      "website": "https://vfxepicframe.com",
       "image": "images/fx9.webp",
       "membership": "Silver"
     },
@@ -84,7 +84,7 @@
       "name": "VisioFX Studio",
       "address": "24 Dream Blvd, Jos",
       "phone": "(+234) 803-111-5555",
-      "website": "https://visiofx.com",
+      "website": "https://visiovfx.com",
       "image": "images/fx11.webp",
       "membership": "Silver"
     },
@@ -100,7 +100,7 @@
       "name": "Visionary FX",
       "address": "12 Dreamland Blvd, Kano",
       "phone": "(+234) 807-654-1111",
-      "website": "https://visionaryfx.com",
+      "website": "https://visionaryvfx.com",
       "image": "images/fx13.webp",
       "membership": "Bronze"
     },
@@ -108,7 +108,7 @@
       "name": "Skyline VFX Studio",
       "address": "78 Palm Street, Lagos",
       "phone": "(+234) 812-555-7777",
-      "website": "https://skylinevfx.com",
+      "website": "https://skylinevvfx.com",
       "image": "images/fx14.webp",
       "membership": "Silver"
     }
