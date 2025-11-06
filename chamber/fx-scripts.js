@@ -1,7 +1,7 @@
-// ✅ Update Footer Date Automatically
+//  Update Footer Date Automatically
 document.querySelector(".modification").textContent = document.lastModified;
 
-// ✅ Responsive Menu Toggle
+//  Responsive Menu Toggle
 const menuButton = document.querySelector("#menu");
 const navList = document.querySelector(".list");
 
@@ -10,7 +10,7 @@ menuButton.addEventListener("click", () => {
   menuButton.textContent = navList.classList.contains("open") ? "✖" : "☰";
 });
 
-// ✅ Fetch and Display Members from JSON
+//  Fetch and Display Members from JSON
 async function loadMembers() {
   try {
     const response = await fetch("data/members.json");
@@ -54,7 +54,7 @@ function displayMembers(members) {
   cards.forEach(card => observer.observe(card));
 }
 
-// ✅ Grid/List View Toggle
+//Grid/List View Toggle
 const gridButton = document.getElementById("grid-toggle");
 const listButton = document.getElementById("list-toggle");
 const cardsContainer = document.getElementById("cards");
@@ -73,5 +73,5 @@ listButton.addEventListener("click", () => {
   gridButton.classList.remove("active-view");
 });
 
-// ✅ Load Members When Page is Ready
+// Load Members When Page is Ready
 document.addEventListener("DOMContentLoaded", loadMembers);
