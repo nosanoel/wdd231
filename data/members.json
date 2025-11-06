@@ -1,0 +1,116 @@
+{
+  "members": [
+    {
+      "name": "FX Global Studios",
+      "address": "45 Market Blvd, Lagos, Nigeria",
+      "phone": "(+234) 701-123-4567",
+      "website": "https://fxglobalstudios.com",
+      "image": "images/fx1.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Capital VFX Ltd",
+      "address": "100 Wall Street, Abuja, Nigeria",
+      "phone": "(+234) 802-555-9080",
+      "website": "https://capitalvfx.com",
+      "image": "images/fx2.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Traders Hub Media",
+      "address": "87 Marina Rd, Lagos, Nigeria",
+      "phone": "(+234) 803-555-1111",
+      "website": "https://tradershubmedia.com",
+      "image": "images/fx3.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "FX Insight Motion",
+      "address": "240 King St, Ibadan, Nigeria",
+      "phone": "(+234) 806-555-6789",
+      "website": "https://fxinsightmotion.com",
+      "image": "images/fx4.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "BlueWave FX",
+      "address": "22 Broad St, Lagos, Nigeria",
+      "phone": "(+234) 701-000-2222",
+      "website": "https://bluewavefx.com",
+      "image": "images/fx5.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "TradeSmart Visuals",
+      "address": "8 Victoria Island, Lagos",
+      "phone": "(+234) 802-999-3333",
+      "website": "https://tradesmartvisuals.com",
+      "image": "images/fx6.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "PixelPro FX",
+      "address": "99 Unity Rd, Kano",
+      "phone": "(+234) 805-888-4444",
+      "website": "https://pixelprofx.com",
+      "image": "images/fx7.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "MotionForge Studio",
+      "address": "55 Creative Ave, Enugu, Nigeria",
+      "phone": "(+234) 808-444-5555",
+      "website": "https://motionforge.com",
+      "image": "images/fx8.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "EpicFrame Labs",
+      "address": "18 Ocean Rd, Port Harcourt",
+      "phone": "(+234) 809-222-9999",
+      "website": "https://epicframe.com",
+      "image": "images/fx9.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "RenderRise VFX",
+      "address": "89 Light Way, Abuja",
+      "phone": "(+234) 701-333-4444",
+      "website": "https://renderrise.com",
+      "image": "images/fx10.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "VisioFX Studio",
+      "address": "24 Dream Blvd, Jos",
+      "phone": "(+234) 803-111-5555",
+      "website": "https://visiofx.com",
+      "image": "images/fx11.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "NextGen Animation",
+      "address": "300 Sky St, Lagos",
+      "phone": "(+234) 802-777-0000",
+      "website": "https://nextgenanimation.com",
+      "image": "images/fx12.webp",
+      "membership": "Gold"
+    },
+    {
+      "name": "Visionary FX",
+      "address": "12 Dreamland Blvd, Kano",
+      "phone": "(+234) 807-654-1111",
+      "website": "https://visionaryfx.com",
+      "image": "images/fx13.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Skyline VFX Studio",
+      "address": "78 Palm Street, Lagos",
+      "phone": "(+234) 812-555-7777",
+      "website": "https://skylinevfx.com",
+      "image": "images/fx14.webp",
+      "membership": "Silver"
+    }
+  ]
+}

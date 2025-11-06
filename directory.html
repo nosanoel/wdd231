@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Idehen Nosa">
+  <meta name="description" content="Professional directory of VFX artists and studios for the WDD 231 Chamber project.">
+
+  <title>FX-Chamber | VFX Directory</title>
+
+  <link rel="icon" type="image/x-icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles/fx-styles.css">
+
+  <script src="scripts/fx-scripts.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="index.html">
+        <img src="images/logo.webp" alt="FX Chamber logo" class="profile-image">
+        <h1>VFX Chamber of Artists</h1>
+      </a>
+      <a id="menu" href="#" aria-label="Menu">&#9776;</a>
+      <ul class="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>VFX Artist & Studio Directory</h2>
+
+    <div class="filter">
+      <button id="grid-toggle" aria-label="Grid View">⬜⬜</button>
+      <button id="list-toggle" aria-label="List View">☰</button>
+    </div>
+
+    <div id="cards" class="grid-view">
+
+      <!-- 14 Professional VFX Entries -->
+      <section>
+        <img src="images/fx1.webp" alt="FX Global Studios">
+        <h3>FX Global Studios</h3>
+        <p>45 Market Blvd, Lagos, Nigeria</p>
+        <p>(+234) 701-123-4567</p>
+        <a href="https://fxglobalstudios.com" target="_blank">fxglobalstudios.com</a>
+        <p><strong>Gold Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx2.webp" alt="Capital VFX Ltd">
+        <h3>Capital VFX Ltd</h3>
+        <p>100 Wall Street, Abuja, Nigeria</p>
+        <p>(+234) 802-555-9080</p>
+        <a href="https://capitalvfx.com" target="_blank">capitalvfx.com</a>
+        <p><strong>Silver Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx3.webp" alt="Traders Hub Media">
+        <h3>Traders Hub Media</h3>
+        <p>87 Marina Rd, Lagos, Nigeria</p>
+        <p>(+234) 803-555-1111</p>
+        <a href="https://tradershubmedia.com" target="_blank">tradershubmedia.com</a>
+        <p><strong>Bronze Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx4.webp" alt="FX Insight Motion">
+        <h3>FX Insight Motion</h3>
+        <p>240 King St, Ibadan, Nigeria</p>
+        <p>(+234) 806-555-6789</p>
+        <a href="https://fxinsightmotion.com" target="_blank">fxinsightmotion.com</a>
+        <p><strong>Gold Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx5.webp" alt="BlueWave FX">
+        <h3>BlueWave FX</h3>
+        <p>22 Broad St, Lagos</p>
+        <p>(+234) 701-000-2222</p>
+        <a href="https://bluewavefx.com" target="_blank">bluewavefx.com</a>
+        <p><strong>Silver Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx6.webp" alt="TradeSmart Visuals">
+        <h3>TradeSmart Visuals</h3>
+        <p>8 Victoria Island, Lagos</p>
+        <p>(+234) 802-999-3333</p>
+        <a href="https://tradesmartvisuals.com" target="_blank">tradesmartvisuals.com</a>
+        <p><strong>Gold Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx7.webp" alt="PixelPro FX">
+        <h3>PixelPro FX</h3>
+        <p>99 Unity Rd, Kano</p>
+        <p>(+234) 805-888-4444</p>
+        <a href="https://pixelprofx.com" target="_blank">pixelprofx.com</a>
+        <p><strong>Bronze Member</strong></p>
+      </section>
+
+      <!-- 7 NEW MEMBERS -->
+      <section>
+        <img src="images/fx8.webp" alt="MotionForge Studio">
+        <h3>MotionForge Studio</h3>
+        <p>55 Creative Ave, Enugu, Nigeria</p>
+        <p>(+234) 808-444-5555</p>
+        <a href="https://motionforge.com" target="_blank">motionforge.com</a>
+        <p><strong>Gold Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx9.webp" alt="EpicFrame Labs">
+        <h3>EpicFrame Labs</h3>
+        <p>18 Ocean Rd, Port Harcourt</p>
+        <p>(+234) 809-222-9999</p>
+        <a href="https://epicframe.com" target="_blank">epicframe.com</a>
+        <p><strong>Silver Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx10.webp" alt="RenderRise VFX">
+        <h3>RenderRise VFX</h3>
+        <p>89 Light Way, Abuja</p>
+        <p>(+234) 701-333-4444</p>
+        <a href="https://renderrise.com" target="_blank">renderrise.com</a>
+        <p><strong>Gold Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx11.webp" alt="VisioFX Studio">
+        <h3>VisioFX Studio</h3>
+        <p>24 Dream Blvd, Jos</p>
+        <p>(+234) 803-111-5555</p>
+        <a href="https://visiofx.com" target="_blank">visiofx.com</a>
+        <p><strong>Silver Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx12.webp" alt="NextGen Animation">
+        <h3>NextGen Animation</h3>
+        <p>300 Sky St, Lagos</p>
+        <p>(+234) 802-777-0000</p>
+        <a href="https://nextgenanimation.com" target="_blank">nextgenanimation.com</a>
+        <p><strong>Gold Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx13.webp" alt="Visionary FX">
+        <h3>Visionary FX</h3>
+        <p>12 Dreamland Blvd, Kano</p>
+        <p>(+234) 807-654-1111</p>
+        <a href="https://visionaryfx.com" target="_blank">visionaryfx.com</a>
+        <p><strong>Bronze Member</strong></p>
+      </section>
+
+      <section>
+        <img src="images/fx14.webp" alt="Skyline VFX Studio">
+        <h3>Skyline VFX Studio</h3>
+        <p>78 Palm Street, Lagos</p>
+        <p>(+234) 812-555-7777</p>
+        <a href="https://skylinevfx.com" target="_blank">skylinevfx.com</a>
+        <p><strong>Silver Member</strong></p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <section class="contact-info">
+      <h3>VFX Chamber Headquarters</h3>
+      <p>123 Creative Blvd, Lagos, Nigeria</p>
+      <p>Tel: (+234) 701-555-0000</p>
+    </section>
+
+    <section class="social-media">
+      <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://youtube.com/" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+    </section>
+
+    <section class="course-info">
+      <p>WDD 231 Class Project | Idehen Nosa</p>
+      <p>Last Modification: <span class="modification"></span></p>
+    </section>
+  </footer>
+</body>
+</html>
