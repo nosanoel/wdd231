@@ -5,7 +5,7 @@
       "address": "45 Market Blvd, Lagos, Nigeria",
       "phone": "(+234) 701-123-4567",
       "website": "https://vfxglobalstudios.com",
-      "image": "images/fx1.webp",
+      "image": "images/favicon-16x16.webp",
       "membership": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "100 Wall Street, Abuja, Nigeria",
       "phone": "(+234) 802-555-9080",
       "website": "https://capitalvfx.com",
-      "image": "images/fx2.webp",
+      "image": "images/cvfx.webp",
       "membership": "Silver"
     },
     {
@@ -21,31 +21,31 @@
       "address": "87 Marina Rd, Lagos, Nigeria",
       "phone": "(+234) 803-555-1111",
       "website": "https://tradershubmedia.com",
-      "image": "images/fx3.webp",
+      "image": "images/mvfx.png",
       "membership": "Bronze"
     },
     {
       "name": "VFX Insight Motion",
       "address": "240 King St, Ibadan, Nigeria",
       "phone": "(+234) 806-555-6789",
-      "website": "https://vfxinsightmotion.com",
-      "image": "images/fx4.webp",
+      "website": "https://fxinsightmotion.com",
+      "image": "images/android-chrome-192x192.webp",
       "membership": "Gold"
     },
     {
       "name": "BlueWave VFX",
-      "address": "22 Broad St, Lagos, Nigeria",
+      "address": "22 Broad St, Lagos",
       "phone": "(+234) 701-000-2222",
       "website": "https://bluewavefx.com",
-      "image": "images/fx5.webp",
+      "image": "images/download-6.webp",
       "membership": "Silver"
     },
     {
       "name": "Smart Visualsfx",
       "address": "8 Victoria Island, Lagos",
       "phone": "(+234) 802-999-3333",
-      "website": "https://tradesmartvisuals.com",
-      "image": "images/fx6.webp",
+      "website": "https://vfxvisuals.com",
+      "image": "images/download.webp",
       "membership": "Gold"
     },
     {
@@ -53,31 +53,31 @@
       "address": "99 Unity Rd, Kano",
       "phone": "(+234) 805-888-4444",
       "website": "https://pixelprovfx.com",
-      "image": "images/fx7.webp",
+      "image": "images/download.webp",
       "membership": "Bronze"
     },
     {
       "name": "MotionForge Studio",
       "address": "55 Creative Ave, Enugu, Nigeria",
       "phone": "(+234) 808-444-5555",
-      "website": "https://vfxmotionforge.com",
-      "image": "images/fx8.webp",
+      "website": "https://motionforge.com",
+      "image": "images/download.webp",
       "membership": "Gold"
     },
     {
       "name": "EpicFrame Labs",
       "address": "18 Ocean Rd, Port Harcourt",
       "phone": "(+234) 809-222-9999",
-      "website": "https://vfxepicframe.com",
-      "image": "images/fx9.webp",
+      "website": "https://epicvfxframe.com",
+      "image": "images/download.webp",
       "membership": "Silver"
     },
     {
       "name": "RenderRise VFX",
       "address": "89 Light Way, Abuja",
       "phone": "(+234) 701-333-4444",
-      "website": "https://renderrise.com",
-      "image": "images/fx10.webp",
+      "website": "https://rendervfxrise.com",
+      "image": "images/download.webp",
       "membership": "Gold"
     },
     {
@@ -85,7 +85,7 @@
       "address": "24 Dream Blvd, Jos",
       "phone": "(+234) 803-111-5555",
       "website": "https://visiovfx.com",
-      "image": "images/fx11.webp",
+      "image": "images/download-6.webp",
       "membership": "Silver"
     },
     {
@@ -93,7 +93,7 @@
       "address": "300 Sky St, Lagos",
       "phone": "(+234) 802-777-0000",
       "website": "https://nextgenanimation.com",
-      "image": "images/fx12.webp",
+      "image": "images/download.webp",
       "membership": "Gold"
     },
     {
@@ -101,15 +101,15 @@
       "address": "12 Dreamland Blvd, Kano",
       "phone": "(+234) 807-654-1111",
       "website": "https://visionaryvfx.com",
-      "image": "images/fx13.webp",
+      "image": "images/download.webp",
       "membership": "Bronze"
     },
     {
       "name": "Skyline VFX Studio",
       "address": "78 Palm Street, Lagos",
       "phone": "(+234) 812-555-7777",
-      "website": "https://skylinevvfx.com",
-      "image": "images/fx14.webp",
+      "website": "https://skylinevfx.com",
+      "image": "images/download.webp",
       "membership": "Silver"
     }
   ]
