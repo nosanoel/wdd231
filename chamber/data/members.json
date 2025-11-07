@@ -1,7 +1,7 @@
 {
   "members": [
     {
-      "name": "FX Global Studios",
+      "name": "VFX Global Studios",
       "address": "45 Market Blvd, Lagos, Nigeria",
       "phone": "(+234) 701-123-4567",
       "website": "https://vfxglobalstudios.com",
@@ -17,7 +17,7 @@
       "membership": "Silver"
     },
     {
-      "name": "Traders Hub Media",
+      "name": "Vfx Media",
       "address": "87 Marina Rd, Lagos, Nigeria",
       "phone": "(+234) 803-555-1111",
       "website": "https://tradershubmedia.com",
@@ -25,7 +25,7 @@
       "membership": "Bronze"
     },
     {
-      "name": "FX Insight Motion",
+      "name": "VFX Insight Motion",
       "address": "240 King St, Ibadan, Nigeria",
       "phone": "(+234) 806-555-6789",
       "website": "https://vfxinsightmotion.com",
@@ -33,7 +33,7 @@
       "membership": "Gold"
     },
     {
-      "name": "BlueWave FX",
+      "name": "BlueWave VFX",
       "address": "22 Broad St, Lagos, Nigeria",
       "phone": "(+234) 701-000-2222",
       "website": "https://bluewavefx.com",
@@ -41,7 +41,7 @@
       "membership": "Silver"
     },
     {
-      "name": "TradeSmart Visuals",
+      "name": "Smart Visualsfx",
       "address": "8 Victoria Island, Lagos",
       "phone": "(+234) 802-999-3333",
       "website": "https://tradesmartvisuals.com",
@@ -49,7 +49,7 @@
       "membership": "Gold"
     },
     {
-      "name": "PixelPro FX",
+      "name": "PixelPro VFX",
       "address": "99 Unity Rd, Kano",
       "phone": "(+234) 805-888-4444",
       "website": "https://pixelprovfx.com",
