@@ -44,7 +44,7 @@ getWeather();
 
 // COMPANY SPOTLIGHT
 async function loadSpotlights() {
-  const res = await fetch("menber.json");
+  const res = await fetch("data/menber.json");
   const data = await res.json();
 
   const goldSilver = data.members.filter(
