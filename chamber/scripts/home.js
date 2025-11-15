@@ -7,8 +7,8 @@ menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // WEATHER SECTION (OpenWeather API)
-const apiKey = "YOUR_OPENWEATHERMAP_API_KEY"; // Replace with your key
-const city = "Franklin";
+const apiKey = ""; 
+const city = "edostate";
 const weatherContainer = document.getElementById("weather-data");
 
 async function getWeather() {
@@ -60,8 +60,8 @@ async function loadSpotlights() {
       <img src="${m.logo}" alt="${m.name} logo" />
       <h3>${m.name}</h3>
       <p>${m.membership} Member</p>
-      <p>📞 ${m.phone}</p>
-      <p>📍 ${m.address}</p>
+      <p> ${m.phone}</p>
+      <p> ${m.address}</p>
       <a href="${m.website}" target="_blank" class="cta-btn">Visit Website</a>
     </div>`
     )
