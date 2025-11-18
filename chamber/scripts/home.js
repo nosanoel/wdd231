@@ -1,12 +1,21 @@
-// Responsive menu
+// ==========================
+// RESPONSIVE MENU
+// ==========================
 const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.querySelector('.nav-links');
-menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
 
-// Footer year
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+
+// ==========================
+// FOOTER YEAR
+// ==========================
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ==========================
 // WEATHER SECTION (OpenWeather API)
+// ==========================
 const apiKey = ""; 
 const city = "edostate";
 const weatherContainer = document.getElementById("weather-data");
@@ -21,7 +30,9 @@ async function getWeather() {
     const currentTemp = Math.round(current.main.temp);
     const description = current.weather[0].description;
 
-    const forecast = data.list.filter((_, i) => i % 8 === 0).slice(1, 4);
+    const forecast = data.list
+      .filter((_, i) => i % 8 === 0)
+      .slice(1, 4);
 
     weatherContainer.innerHTML = `
       <p><strong>Current:</strong> ${currentTemp}°F, ${description}</p>
@@ -30,8 +41,7 @@ async function getWeather() {
         ${forecast
           .map(
             (day) => `
-          <li>${new Date(day.dt_txt).toLocaleDateString([], { weekday: "short" })}: ${Math.round(day.main.temp)}°F</li>
-        `
+          <li>${new Date(day.dt_txt).toLocaleDateString([], { weekday: "short" })}: ${Math.round(day.main.temp)}°F</li>`
           )
           .join("")}
       </ul>
@@ -42,31 +52,38 @@ async function getWeather() {
 }
 getWeather();
 
+// ==========================
 // COMPANY SPOTLIGHT
+// ==========================
 async function loadSpotlights() {
-  const res = await fetch("data/member.json");
+  const res = await fetch("data/member.json"); // corrected name
   const data = await res.json();
 
   const goldSilver = data.members.filter(
     (m) => m.membership === "Gold" || m.membership === "Silver"
   );
-  const selected = goldSilver.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+  const selected = goldSilver
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3);
 
   const container = document.getElementById("spotlight-container");
+
   container.innerHTML = selected
     .map(
       (m) => `
-    <div class="spotlight">
-      <img src="${m.logo}" alt="${m.name} logo" />
-      <h3>${m.name}</h3>
-      <p>${m.membership} Member</p>
-      <p> ${m.phone}</p>
-      <p> ${m.address}</p>
-      <a href="${m.website}" target="_blank" class="cta-btn">Visit Website</a>
-    </div>`
+      <div class="spotlight">
+        <img src="${m.image}" alt="${m.name} logo" />
+        <h3>${m.name}</h3>
+        <p>${m.membership} Member</p>
+        <p>${m.phone}</p>
+        <p>${m.address}</p>
+        <a href="${m.website}" target="_blank" class="cta-btn">Visit Website</a>
+      </div>`
     )
     .join("");
 }
+
 loadSpotlights();
 
 // ==========================
@@ -77,15 +94,13 @@ autoHeroSlides();
 
 function autoHeroSlides() {
   const slides = document.querySelectorAll(".hero-slide");
-  slides.forEach(slide => {
-    slide.style.display = "none";
-  });
+
+  slides.forEach((slide) => (slide.style.display = "none"));
 
   heroIndex++;
   if (heroIndex > slides.length) heroIndex = 1;
 
-  const currentSlide = slides[heroIndex - 1];
-  currentSlide.style.display = "block";
+  slides[heroIndex - 1].style.display = "block";
 
-  setTimeout(autoHeroSlides, 5000); // Change every 5 seconds
+  setTimeout(autoHeroSlides, 5000);
 }
