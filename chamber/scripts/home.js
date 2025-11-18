@@ -2,10 +2,11 @@
 // RESPONSIVE MENU
 // ==========================
 const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.getElementById('main-nav');
 
 menuBtn.addEventListener('click', () => {
   navLinks.classList.toggle('open');
+  document.body.classList.toggle('menu-open'); // push content down
 });
 
 // ==========================
@@ -56,7 +57,7 @@ getWeather();
 // COMPANY SPOTLIGHT
 // ==========================
 async function loadSpotlights() {
-  const res = await fetch("data/member.json"); // corrected name
+  const res = await fetch("data/members.json"); 
   const data = await res.json();
 
   const goldSilver = data.members.filter(

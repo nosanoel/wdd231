@@ -1,0 +1,97 @@
+/* ==========================
+   MENU STYLING
+   ========================== */
+
+/* Header container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 10;
+  background-color: var(--bg-header, #111);
+}
+
+/* Logo and title */
+.logo {
+  height: 50px;
+}
+
+/* Main nav - desktop */
+#main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: max-height 0.4s ease-in-out;
+}
+
+#main-nav ul.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul.nav-links li a {
+  text-decoration: none;
+  color: var(--text-color, #fff);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#main-nav ul.nav-links li a:hover,
+#main-nav ul.nav-links li a.active {
+  color: var(--accent-color, #f39c12);
+}
+
+/* Menu button - hidden on desktop */
+#menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--text-color, #fff);
+  cursor: pointer;
+}
+
+/* ==========================
+   RESPONSIVE MENU (MOBILE)
+   ========================== */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+
+  /* Hide nav by default */
+  #main-nav {
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--bg-panel, #222);
+  }
+
+  /* When open - push content down */
+  #main-nav.open {
+    max-height: 500px; /* Adjust if more links added */
+  }
+
+  #main-nav ul.nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  #main-nav ul.nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  /*  main content down when menu opens */
+  body.menu-open main {
+    margin-top: calc(70px + 500px); /* header height + max nav height */
+    transition: margin-top 0.4s ease-in-out;
+  }
+}
