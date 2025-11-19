@@ -15,35 +15,47 @@ menuBtn.addEventListener('click', () => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // ==========================
-// WEATHER SECTION (OpenWeather API)
+// WEATHER SECTION (OpenWeather Forecast API)
 // ==========================
-const apiKey = ""; 
-const city = "edostate";
+const apiKey = "b8870765ca85e83418bd6f2cfa9c2ade";
+const city = "benin"; //  
 const weatherContainer = document.getElementById("weather-data");
 
 async function getWeather() {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+    // Use the forecast API 
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
     const res = await fetch(url);
     const data = await res.json();
 
+    if (data.cod !== "200") {
+      weatherContainer.innerHTML = `<p>Weather data unavailable.</p>`;
+      return;
+    }
+
+    // Current weather = first item
     const current = data.list[0];
     const currentTemp = Math.round(current.main.temp);
     const description = current.weather[0].description;
 
+    // Generate 3-day forecast (one per day)
     const forecast = data.list
-      .filter((_, i) => i % 8 === 0)
-      .slice(1, 4);
+      .filter((_, i) => i % 8 === 0) // each 24 hours
+      .slice(1, 4); // next 3 days only
 
+    // Insert into HTML
     weatherContainer.innerHTML = `
-      <p><strong>Current:</strong> ${currentTemp}°F, ${description}</p>
+      <p><strong>Current:</strong> ${currentTemp}°C, ${description}</p>
+
       <h3>3-Day Forecast</h3>
       <ul>
         ${forecast
-          .map(
-            (day) => `
-          <li>${new Date(day.dt_txt).toLocaleDateString([], { weekday: "short" })}: ${Math.round(day.main.temp)}°F</li>`
-          )
+          .map(day => `
+            <li>
+              ${new Date(day.dt_txt).toLocaleDateString([], { weekday: "short" })}:
+              ${Math.round(day.main.temp)}°C
+            </li>
+          `)
           .join("")}
       </ul>
     `;
@@ -51,13 +63,14 @@ async function getWeather() {
     weatherContainer.innerHTML = `<p>Weather data unavailable.</p>`;
   }
 }
+
 getWeather();
 
 // ==========================
 // COMPANY SPOTLIGHT
 // ==========================
 async function loadSpotlights() {
-  const res = await fetch("data/members.json"); 
+  const res = await fetch("data/members.json");
   const data = await res.json();
 
   const goldSilver = data.members.filter(
