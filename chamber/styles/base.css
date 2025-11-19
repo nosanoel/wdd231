@@ -1,5 +1,5 @@
 /* ==========================
-   BASE NAVIGATION & HEADER STYLES
+   MENU STYLING
    ========================== */
 
 /* Header container */
@@ -18,10 +18,7 @@
   height: 50px;
 }
 
-/* ==========================
-   MAIN NAVIGATION (DESKTOP)
-   ========================== */
-
+/* Main nav - desktop */
 #main-nav {
   display: flex;
   justify-content: center;
@@ -44,18 +41,14 @@
   transition: color 0.3s ease;
 }
 
-/* Active and hover states */
 #main-nav ul.nav-links li a:hover,
 #main-nav ul.nav-links li a.active {
   color: var(--accent-color, #f39c12);
 }
 
-/* ==========================
-   MENU BUTTON (HAMBURGER)
-   ========================== */
-
+/* Menu button */
 #menu-btn {
-  display: none; /* hidden on desktop */
+  display: none;
   font-size: 2rem;
   background: none;
   border: none;
@@ -66,9 +59,7 @@
 /* ==========================
    RESPONSIVE MENU (MOBILE)
    ========================== */
-
 @media (max-width: 768px) {
-  /* Show menu button */
   #menu-btn {
     display: block;
   }
@@ -82,9 +73,9 @@
     background-color: var(--bg-panel, #222);
   }
 
-  /* Nav when menu is open */
+  /* When open - push content down */
   #main-nav.open {
-    max-height: 500px; /* large enough for all links */
+    max-height: 500px; 
   }
 
   #main-nav ul.nav-links {
@@ -98,9 +89,9 @@
     font-size: 1.2rem;
   }
 
-  /* Push content down when menu opens */
+  /* Shift main content down when menu opens */
   body.menu-open main {
-    margin-top: calc(70px + 500px);
+    margin-top: calc(70px + 500px); /* header height + max nav height */
     transition: margin-top 0.4s ease-in-out;
   }
 }
