@@ -1,0 +1,270 @@
+/* ==========================
+   FX-CHAMBER — DARK CINEMATIC THEME  
+   Applied to JOIN PAGE
+   ========================== */
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-panel: #141414;
+  --text-light: #f1f1f1;
+  --accent-color: #00c8ff;
+  --accent-hover: #00e4ff;
+  --font-main: "Inter", Arial, sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --bg-header: #111;
+}
+
+/* ==========================
+   GLOBAL
+   ========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ==========================
+   HEADER
+   ========================== */
+header {
+  background-color: rgba(10, 10, 10, 0.95);
+  border-bottom: 1px solid #222;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--text-light);
+}
+
+/* NAV */
+#main-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+#main-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#main-nav a:hover {
+  color: var(--accent-color);
+}
+
+#menu-btn {
+  display: none;
+  background: none;
+  color: var(--text-light);
+  font-size: 2rem;
+  border: none;
+}
+
+/* ==========================
+   MAIN CONTAINER
+   ========================== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+/* ==========================
+   FORM — Dark Theme
+   ========================== */
+form {
+  background: var(--bg-panel);
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 350px;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 1px solid #222;
+}
+
+form h2 {
+  font-family: var(--font-heading);
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #333;
+  background-color: #0f0f0f;
+  color: var(--text-light);
+  border-radius: 6px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: var(--accent-color);
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-3px);
+}
+
+/* ==========================
+   MEMBERSHIP CARDS
+   ========================== */
+.membership-cards {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--bg-panel);
+  border: 1px solid #222;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.6s ease, opacity 0.6s ease, border-color 0.4s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.card a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  color: var(--accent-hover);
+}
+
+/* ==========================
+   MODALS — DARK THEME
+   ========================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background: var(--bg-panel);
+  color: var(--text-light);
+  margin: 10% auto;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  border: 1px solid #222;
+  animation: fadeIn 0.4s ease;
+}
+
+.close {
+  float: right;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.close:hover {
+  color: var(--accent-hover);
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+footer {
+  background: var(--bg-panel);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--text-light);
+  border-top: 1px solid #222;
+}
+
+/* ==========================
+   ANIMATIONS
+   ========================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ==========================
+   RESPONSIVE
+   ========================== */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  #main-nav.open ul {
+    display: flex;
+  }
+}
