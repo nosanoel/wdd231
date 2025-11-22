@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Games – Kings</title>
+  <meta name="description" content="Browse trending and top-rated games on Qiyi.">
+  <link rel="stylesheet" href="bbnnnn.css">
+  <link rel="icon" href="./res/img/favicon.png">
+</head>
+<body>
+
+  <!-- Same Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><span class="brand-name">Kings</span></a></div>
+
+      <nav class="main-nav">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="menu" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html" aria-current="page">Games</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:2rem 0">
+    <h1>All Games</h1>
+    <p>Browse the full game library from our editors.</p>
+    <div class="grid" id="gameList"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>&copy;<span id="year"></span> Qiyi</small>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { loadGamesInto } from "game.js";
+    loadGamesInto("gameList");
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

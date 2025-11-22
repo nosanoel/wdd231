@@ -1,0 +1,212 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <title>kings — Home</title>
+  <meta name="description" content="kings— Games, reviews, videos and trending picks.">
+  <meta name="author" content="idehen nosa">
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content=" kings — Games & Reviews" >
+  <meta property="og:description" content="Discover games, reviews and live streams on Qiyi.">
+  <meta property="og:type" content="website" >
+  <meta property="og:image" content="./res/img/fr.jpg" >
+  <link rel="icon" href="./res/img/favicon.png" type="image/png">
+ <script defer src="jav.js"></script>
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="bbnnnn.css">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" aria-label="kings home">
+          <svg class="brand-mark" width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+            <rect width="24" height="24" rx="4" fill="#0b3650"></rect>
+            <text x="12" y="16" font-size="12" font-family="sans-serif" fill="#fff" text-anchor="middle">Q</text>
+          </svg>
+          <span class="brand-name">kings</span>
+        </a>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Open menu</span>
+          <!-- accessible hamburger icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </button>
+
+        <ul id="primary-menu" class="menu" hidden>
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Gear</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Search">
+          <!-- inline search icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" fill="none"></circle>
+          </svg>
+        </button>
+
+        <div class="user-links">
+          <a href="#" class="login-link">Login</a>
+          <span class="sep" aria-hidden="true">|</span>
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false">En ▾</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main" id="main" role="main">
+    <!-- hero / video background (keeps it accessible) -->
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <!-- use muted autoplay only if you host the video and it is essential; otherwise remove autoplay -->
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="./res/videos/fe.webm" type="video/webm">
+          <!-- fallback image -->
+          <img src="./res/img/fr.jpg" alt="">
+        </video>
+      </div>
+
+      <div class="hero-overlay container">
+        <h1 class="hero-title">Feature & Recommended</h1>
+        <p class="hero-sub">Curated picks from Qiyi editors and the community.</p>
+      </div>
+    </section>
+
+    <section class="content container">
+      <aside class="sidebar" aria-labelledby="browse-heading">
+        <h2 id="browse-heading" class="visually-hidden">Browse</h2>
+
+<nav class="side-nav" aria-label="Browse categories">
+          <h3 class="side-title">Recommendations</h3>
+          <ul>
+            <li><a href="#"><span class="icon" aria-hidden="true">👥</span>By friends</a></li>
+            <li><a href="#"><span class="icon" aria-hidden="true">🎯</span>By curators</a></li>
+            <li><a href="#"><span class="icon" aria-hidden="true">🏷️</span>Tags</a></li>
+          </ul>
+
+          <h3 class="side-title">Discovery</h3>
+          <ul>
+            <li><a href="#">Recommended</a></li>
+            <li><a href="#">New Releases</a></li>
+          </ul>
+
+          <h3 class="side-title">Genres</h3>
+          <ul class="genres">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="#">Simulation</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="main-list" aria-labelledby="featured-heading">
+        <h2 id="featured-heading" class="section-title">Featured</h2>
+
+        <!-- small accessible slideshow placeholder  -->
+        <div class="card hero-card" role="region" aria-label="Featured games">
+          <picture>
+            <img src="./res/img/fr.jpg" alt="Featured game cover" loading="lazy" width="1200" height="600">
+          </picture>
+
+          <div class="card-info">
+            <h3 class="card-title">Forza 5</h3>
+            <p class="card-meta">Top seller • $40.44</p>
+            <div class="card-actions">
+              <a class="btn" href="#">Purchase now</a>
+              <button class="btn-outline" id="details-open">More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- grid of smaller items -->
+        <div class="grid" aria-live="polite">
+          <!-- example item: duplicate in JS to create many items as needed -->
+          <article class="tile" aria-labelledby="t-1">
+            <img src="./res/img/v2.jpg" alt="Tile image" loading="lazy" width="400" height="220">
+            <h4 id="t-1">Blood and Zombies</h4>
+            <p class="meta">Action • $45.78</p>
+          </article>
+
+          <article class="tile" aria-labelledby="t-2">
+            <img src="./res/img/news-1.jpg" alt="Tile image" loading="lazy" width="400" height="220">
+            <h4 id="t-2">Star War</h4>
+            <p class="meta">Sci-fi • $29.99</p>
+          </article>
+
+          <article class="tile" aria-labelledby="t-3">
+            <img src="./res/img/news-3.jpg" alt="Tile image" loading="lazy" width="400" height="220">
+            <h4 id="t-3">PUBG</h4>
+            <p class="meta">Shooter • $19.99</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- Accessible modal (hidden by default) -->
+    <dialog id="detail-modal" aria-labelledby="modal-title">
+      <h3 id="modal-title">Game details</h3>
+      <p id="modal-desc">More info about the selected game will appear here.</p>
+      <menu>
+        <button id="modal-close">Close</button>
+      </menu>
+    </dialog>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <small>&copy; <span id="year"></span>King — Attributions</small>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Attributions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Minimal JS (). This handles: nav toggle & dialog. -->
+  <script>
+    (function () {
+      // navigation toggle
+      const btn = document.getElementById('nav-toggle');
+      const menu = document.getElementById('primary-menu');
+      btn.addEventListener('click', function () {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        if (menu.hasAttribute('hidden')) {
+          menu.removeAttribute('hidden');
+        } else {
+          menu.setAttribute('hidden', '');
+        }
+      });
+
+// modal demo
+      const modal = document.getElementById('detail-modal');
+      const open = document.getElementById('details-open');
+      const close = document.getElementById('modal-close');
+      if (open && modal) {
+        open.addEventListener('click', () => modal.showModal());
+      }
+      if (close) close.addEventListener('click', () => modal.close());
+
+      // set year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

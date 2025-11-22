@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Form Results –Kings</title>
+  <link rel="stylesheet" href="bbnnnn.css">
+</head>
+<body>
+
+<main class="container" style="padding:2rem 0">
+  <h1>Form Results</h1>
+  <div id="results"></div>
+</main>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const box = document.getElementById("results");
+
+  const name = params.get("name");
+  const email = params.get("email");
+  const genre = params.get("genre");
+
+  box.innerHTML = `
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Favorite Genre:</strong> ${genre}</p>
+  `;
+</script>
+
+</body>
+</html>

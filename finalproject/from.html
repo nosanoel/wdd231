@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Signup Form – kings</title>
+  <link rel="stylesheet" href="bbnnnn.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand"><a href="index.html">Qiyi</a></div>
+  </div>
+</header>
+
+<main class="container" style="padding:2rem 0">
+  <h1>Create Account</h1>
+
+  <form action="form-action.html" method="GET" class="form-box">
+    <fieldset>
+      <legend>Your Information</legend>
+
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Favorite Genre
+        <select name="genre">
+          <option>Action</option>
+          <option>RPG</option>
+          <option>Shooter</option>
+        </select>
+      </label>
+
+      <button type="submit" class="btn">Submit</button>
+    </fieldset>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <small>&copy;<span id="year"></span> Qiyi</small>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
