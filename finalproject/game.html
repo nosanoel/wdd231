@@ -7,7 +7,8 @@
   <meta name="description" content="Browse trending and top-rated games on Kings.">
   <link rel="stylesheet" href="styles/bbnnnn.css">
   <link rel="icon" href="./res/img/favicon.png">
-  <script src="script/forgame.js"></script>
+  <!-- Load JS after DOM with defer -->
+  <script src="script/forgame.js" defer></script>
 </head>
 <body>
 
@@ -31,6 +32,7 @@
     <h1>All Games</h1>
     <p>Browse the full game library from our editors.</p>
     <div class="grid" id="gameList"></div>
+    <p id="errorMsg" style="color:red;display:none;">⚠️ Could not load games. Please try again later.</p>
   </main>
 
   <footer class="site-footer">
@@ -40,4 +42,3 @@
   </footer>
 </body>
 </html>
-

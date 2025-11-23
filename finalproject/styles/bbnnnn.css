@@ -1,4 +1,4 @@
-/* style.css — semantic, responsive,  */
+/* style.css — semantic, responsive */
 :root{
   --bg:#0f2a42;
   --panel:#0b2234;
@@ -98,9 +98,37 @@ body{
 
 /* grid tiles */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
-.tile{background:var(--panel);border-radius:6px;overflow:hidden;padding:.5rem}
-.tile img{width:100%;height:auto;display:block;border-radius:4px;margin-bottom:.5rem}
-.tile .meta{color:var(--muted);font-size:.9rem}
+
+/* NEW: game cards */
+.game-card{
+  background:var(--panel);
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.35);
+  transition:transform .2s ease, box-shadow .2s ease;
+  text-align:center;
+  padding:0.75rem;
+}
+.game-card img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:6px;
+  margin-bottom:.5rem;
+}
+.game-card h3{
+  font-size:1rem;
+  margin-bottom:.25rem;
+  color:var(--text);
+}
+.game-card p{
+  font-size:.85rem;
+  color:var(--muted);
+}
+.game-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.45);
+}
 
 /* footer */
 .site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1rem 0;margin-top:2rem;background:#062029}

@@ -1,12 +1,16 @@
 async function loadGames() {
   try {
     const response = await fetch("https://www.freetogame.com/api/games");
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
     const games = await response.json();
-
     const gameList = document.getElementById("gameList");
-    gameList.innerHTML = "";
+    const errorMsg = document.getElementById("errorMsg");
 
-    games.slice(0, 20).forEach(game => { // limit to 20 for speed
+    gameList.innerHTML = "";
+    errorMsg.style.display = "none";
+
+    games.slice(0, 20).forEach(game => {
       const card = document.createElement("div");
       card.className = "game-card";
       card.innerHTML = `
@@ -18,7 +22,12 @@ async function loadGames() {
     });
   } catch (error) {
     console.error("Error loading games:", error);
+    document.getElementById("errorMsg").style.display = "block";
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadGames);
+// Auto-update footer year
+document.addEventListener("DOMContentLoaded", () => {
+  loadGames();
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
