@@ -7,7 +7,7 @@
   {"title":"Blood and Zombies","genre":"Action","platform":"PC","price":"$23.45","image":"images/news-2.jpg"},
   {"title":"Star War","genre":"Adventure","platform":"PC","price":"$23.45","image":"images/news-6.jpg"},
   {"title":"Minecraft","genre":"Sandbox","platform":"Multi","price":"$25.00","image":"images/banner-img-1.jpg"},
-  {"title":"Sample 8","genre":"Simulation","platform":"Windows","price":"$20.00","image":"images/img/news-3.jpg"},
+  {"title":"Sample 8","genre":"Simulation","platform":"Windows","price":"$20.00","image":"images/news-3.jpg"},
   {"title":"Sample 9","genre":"Strategy","platform":"PC","price":"$18.00","image":"images/news-4.jpg"},
   {"title":"Sample 10","genre":"RPG","platform":"PC","price":"$22.00","image":"images/news-5.jpg"},
   {"title":"Sample 11","genre":"Action","platform":"Windows","price":"$19.00","image":"images/news-7.jpg"},
