@@ -2,7 +2,7 @@
 export async function loadGamesInto(id) {
   const box = document.getElementById(id);
   try {
-    const res = await fetch("game.json");
+    const res = await fetch("data/game.json");
     const games = await res.json();
 
     box.innerHTML = games

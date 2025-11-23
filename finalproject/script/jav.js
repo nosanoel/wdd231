@@ -13,7 +13,7 @@ localStorage.setItem("qiyi_lastVisit", new Date().toISOString());
 // Fetch & render items
 async function loadGames() {
   try {
-    const res = await fetch("game.json");
+    const res = await fetch("data/game.json");
 
     if (!res.ok) {
       throw new Error("Failed to fetch JSON: " + res.status);
