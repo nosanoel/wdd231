@@ -7,7 +7,7 @@
   <meta name="description" content="Browse trending and top-rated games on Kings.">
   <link rel="stylesheet" href="bbnnnn.css">
   <link rel="icon" href="./res/img/favicon.png">
-  <script defer src="game.js"></script>
+  
 </head>
 <body>
 
@@ -40,7 +40,7 @@
   </footer>
 
   <script type="module">
-    import { loadGamesInto } from "game.js";
+    import { loadGamesInto } from "data/game.js";
     loadGamesInto("gameList");
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
