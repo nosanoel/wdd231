@@ -7,7 +7,7 @@
   <meta name="description" content="Browse trending and top-rated games on Kings.">
   <link rel="stylesheet" href="styles/bbnnnn.css">
   <link rel="icon" href="./res/img/favicon.png">
-  
+  <script src="script/forgame.js"></script>
 </head>
 <body>
 
@@ -35,15 +35,9 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <small>&copy;<span id="year"></span> Qiyi</small>
+      <small>&copy;<span id="year"></span> Kings</small>
     </div>
   </footer>
-
-  <script type="module">
-    import { loadGamesInto } from "data/game.js";
-    loadGamesInto("gameList");
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
 

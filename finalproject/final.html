@@ -9,11 +9,12 @@
   <meta name="author" content="idehen nosa">
   <!-- Open Graph for social sharing -->
   <meta property="og:title" content=" kings — Games & Reviews" >
-  <meta property="og:description" content="Discover games, reviews and live streams on Qiyi.">
+  <meta property="og:description" content="Discover games, reviews and live streams on kings.">
   <meta property="og:type" content="website" >
   <meta property="og:image" content="./res/img/fr.jpg" >
   <link rel="icon" href="./res/img/favicon.png" type="image/png">
  <script defer src="script/jav.js"></script>
+ <script defer src="script/forfinal.js"></script>
   <!-- Local CSS -->
   <link rel="stylesheet" href="styles/bbnnnn.css">
 </head>
@@ -134,7 +135,7 @@
 
         <!-- grid of smaller items -->
         <div class="grid" aria-live="polite">
-          <!-- example item: duplicate in JS to create many items as needed -->
+        
           <article class="tile" aria-labelledby="t-1">
             <img src="./res/img/v2.jpg" alt="Tile image" loading="lazy" width="400" height="220">
             <h4 id="t-1">Blood and Zombies</h4>
@@ -179,34 +180,7 @@
     </div>
   </footer>
 
-  <!-- Minimal JS (). This handles: nav toggle & dialog. -->
-  <script>
-    (function () {
-      // navigation toggle
-      const btn = document.getElementById('nav-toggle');
-      const menu = document.getElementById('primary-menu');
-      btn.addEventListener('click', function () {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        if (menu.hasAttribute('hidden')) {
-          menu.removeAttribute('hidden');
-        } else {
-          menu.setAttribute('hidden', '');
-        }
-      });
-
-// modal demo
-      const modal = document.getElementById('detail-modal');
-      const open = document.getElementById('details-open');
-      const close = document.getElementById('modal-close');
-      if (open && modal) {
-        open.addEventListener('click', () => modal.showModal());
-      }
-      if (close) close.addEventListener('click', () => modal.close());
-
-      // set year
-      document.getElementById('year').textContent = new Date().getFullYear();
-    })();
+  
   </script>
 </body>
 </html>
