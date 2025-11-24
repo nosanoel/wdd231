@@ -5,17 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Games – Kings</title>
   <meta name="description" content="Browse trending and top-rated games on Kings.">
+  
   <link rel="stylesheet" href="styles/bbnnnn.css">
   <link rel="icon" href="./res/img/favicon.png">
-  <!-- Load JS after DOM with defer -->
+
+  <!-- Load JS after DOM -->
   <script src="script/forgame.js" defer></script>
 </head>
+
 <body>
 
-  <!-- Same Header -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand"><a href="index.html"><span class="brand-name">Kings</span></a></div>
+      <div class="brand">
+        <a href="index.html"><span class="brand-name">Kings</span></a>
+      </div>
 
       <nav class="main-nav">
         <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
@@ -28,17 +33,31 @@
     </div>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container" style="padding:2rem 0">
     <h1>All Games</h1>
     <p>Browse the full game library from our editors.</p>
+
+    <!-- Loading Indicator -->
+    <div id="loading" style="display:none; text-align:center; margin:1rem 0;">
+      <p>⏳ Loading games...</p>
+    </div>
+
+    <!-- Game Grid -->
     <div class="grid" id="gameList"></div>
-    <p id="errorMsg" style="color:red;display:none;">⚠️ Could not load games. Please try again later.</p>
+
+    <!-- Error Message -->
+    <p id="errorMsg" style="color:red; display:none; text-align:center; margin-top:1rem;">
+      ⚠️ Could not load games. Please try again later.
+    </p>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <small>&copy;<span id="year"></span> Kings</small>
     </div>
   </footer>
+
 </body>
 </html>
