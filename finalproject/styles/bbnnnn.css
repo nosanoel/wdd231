@@ -149,6 +149,8 @@ dialog::backdrop{background:rgba(0,0,0,0.6)}
   .container{width:94%}
   .header-inner{padding:.5rem 0}
   .menu{display:none}
+  .menu[hidden] { display: none !important; }
+  .menu:not([hidden]) { display: flex !important; flex-direction: column; gap: 1rem; background: var(--panel); position: absolute; top: 100%; right: 0; left: 0; z-index: 100; padding: 1rem 0; }
   .nav-toggle{display:inline-flex}
   .sidebar{display:none}
   .content{flex-direction:column}
