@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/join.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <script defer src="scripts/menu.js"></script>
+  <script defer src="scripts/thankyou.js"></script>
 </head>
 <body>
 <header>
@@ -52,23 +53,6 @@
 <footer>
   <p>&copy; <span id="year"></span> Chamber of vfx</p>
 </footer>
-<script>
-// footer year
-document.getElementById('year').textContent = new Date().getFullYear();
 
-function safeText(s){
-  if(!s) return '';
-  return String(s).replace(/[<>]/g,'');
-}
-
-const params = new URLSearchParams(window.location.search);
-document.getElementById('out-firstName').textContent = safeText(params.get('firstName'));
-document.getElementById('out-lastName').textContent = safeText(params.get('lastName'));
-document.getElementById('out-email').textContent = safeText(params.get('email'));
-document.getElementById('out-phone').textContent = safeText(params.get('phone'));
-document.getElementById('out-businessName').textContent = safeText(params.get('businessName'));
-const ts = params.get('timestamp');
-document.getElementById('out-timestamp').textContent = ts ? new Date(ts).toString() : '';
-</script>
 </body>
 </html>

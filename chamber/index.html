@@ -114,26 +114,6 @@
       <p>123 Creative Blvd, Lagos, Nigeria</p>
     </footer>
     <div id="visit-message"></div>
-    <script>
-      // Last visit message using localStorage
-      const visitMsg = document.getElementById('visit-message');
-      const lastVisit = localStorage.getItem('lastVisit');
-      const now = new Date();
-      if (lastVisit) {
-        const last = new Date(lastVisit);
-        const diffTime = Math.abs(now - last);
-        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-        if (diffDays === 0) {
-          visitMsg.textContent = 'Welcome back! You last visited today.';
-        } else if (diffDays === 1) {
-          visitMsg.textContent = 'Welcome back! It has been 1 day since your last visit.';
-        } else {
-          visitMsg.textContent = `Welcome back! It has been ${diffDays} days since your last visit.`;
-        }
-      } else {
-        visitMsg.textContent = 'Welcome! This is your first visit.';
-      }
-      localStorage.setItem('lastVisit', now);
-    </script>
+    <script defer src="scripts/site.js"></script>
 </body>
 </html>
