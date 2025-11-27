@@ -31,7 +31,7 @@
     <button id="menu-btn" aria-expanded="false">☰ Menu</button>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="join.html">Join</a></li>
+      <li><a href="join.html" aria-current="page">Join</a></li>
       <li><a href="members.html">Members</a></li>
     </ul>
   </nav>
@@ -40,22 +40,28 @@
 <main class="container">
 
   <!-- Membership Form -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">Join</span>
+  </nav>
+
   <form id="join-form" action="thankyou.html" method="get">
     <h2>Join the Chamber</h2>
 
     <label>
       First Name:
-      <input type="text" name="firstName" title="First Name" autocomplete="given-name" required placeholder=" mike">
+      <input type="text" name="firstName" title="First Name" autocomplete="given-name" required placeholder="Mike">
     </label>
 
     <label>
       Last Name:
-      <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required placeholder="eg sam">
+      <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required placeholder="Sam">
     </label>
 
     <label>
       Organizational Title:
-      <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Senior Manager">
+      <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Senior Manager" required>
     </label>
 
     <label>
@@ -96,19 +102,19 @@
 
   <!-- Membership Cards -->
   <div class="membership-cards">
-    <div class="card" data-modal="modal-np">NP Membership <a href="#">Learn More</a></div>
-    <div class="card" data-modal="modal-bronze">Bronze Membership <a href="#">Learn More</a></div>
-    <div class="card" data-modal="modal-silver">Silver Membership <a href="#">Learn More</a></div>
-    <div class="card" data-modal="modal-gold">Gold Membership <a href="#">Learn More</a></div>
+    <div class="card" data-modal="modal-np">NP Membership <a id="link-np" href="#" aria-haspopup="dialog" aria-controls="modal-np">Learn More</a></div>
+    <div class="card" data-modal="modal-bronze">Bronze Membership <a id="link-bronze" href="#" aria-haspopup="dialog" aria-controls="modal-bronze">Learn More</a></div>
+    <div class="card" data-modal="modal-silver">Silver Membership <a id="link-silver" href="#" aria-haspopup="dialog" aria-controls="modal-silver">Learn More</a></div>
+    <div class="card" data-modal="modal-gold">Gold Membership <a id="link-gold" href="#" aria-haspopup="dialog" aria-controls="modal-gold">Learn More</a></div>
   </div>
 
 </main>
 
 <!-- Modals -->
-<div id="modal-np" class="modal">
+<div id="modal-np" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-np-title">
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3>NP Membership Benefits</h3>
+    <span class="close" role="button" aria-label="Close">&times;</span>
+    <h3 id="modal-np-title">NP Membership Benefits</h3>
     <ul>
       <li>No Fee</li>
       <li>Access to chamber events</li>
@@ -117,10 +123,10 @@
   </div>
 </div>
 
-<div id="modal-bronze" class="modal">
+<div id="modal-bronze" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-bronze-title">
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3>Bronze Membership Benefits</h3>
+    <span class="close" role="button" aria-label="Close">&times;</span>
+    <h3 id="modal-bronze-title">Bronze Membership Benefits</h3>
     <ul>
       <li>Spotlight on website</li>
       <li>Event discounts</li>
@@ -129,10 +135,10 @@
   </div>
 </div>
 
-<div id="modal-silver" class="modal">
+<div id="modal-silver" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-silver-title">
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3>Silver Membership Benefits</h3>
+    <span class="close" role="button" aria-label="Close">&times;</span>
+    <h3 id="modal-silver-title">Silver Membership Benefits</h3>
     <ul>
       <li>Everything in Bronze</li>
       <li>Advertising in newsletter</li>
@@ -141,10 +147,10 @@
   </div>
 </div>
 
-<div id="modal-gold" class="modal">
+<div id="modal-gold" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-gold-title">
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3>Gold Membership Benefits</h3>
+    <span class="close" role="button" aria-label="Close">&times;</span>
+    <h3 id="modal-gold-title">Gold Membership Benefits</h3>
     <ul>
       <li>Everything in Silver</li>
       <li>Spotlight on homepage</li>
@@ -157,6 +163,7 @@
   <p>&copy; <span id="year"></span> Chamber of vfx</p>
 </footer>
 
-<script defer src="scripts/join.js"></script>
+  <script defer src="scripts/menu.js"></script>
+  <script defer src="scripts/join.js"></script>
 </body>
 </html>

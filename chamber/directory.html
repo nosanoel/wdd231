@@ -19,6 +19,7 @@
   <!-- Stylesheet-->
   <!--<link rel="stylesheet" href="styles/base.css">-->
   <link rel="stylesheet" href="styles/fx-styles.css">
+  <link rel="stylesheet" href="styles/directory-cards.css">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="FX-Chamber | VFX Directory">
@@ -28,9 +29,11 @@
   <meta property="og:type" content="website">
 
   <script src="scripts/fx-scripts.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header>
     <nav class="nav">
       <a class="logo" href="index.html">
@@ -48,6 +51,8 @@
   </header>
 
   <main>
+    <!-- main content anchor -->
+    <a id="main-content"></a>
     
     <h1>VFX Directory</h1>
     <h2>VFX Artist & Studio Directory</h2>
@@ -57,28 +62,8 @@
       <button id="list-toggle" aria-label="List View">☰</button>
     </div>
 
-    <div id="cards" class="grid-view">
-
-      <section>
-        <img src="images/favicon-16x16.webp" alt="VFX Global Studios">
-        <h3>VFX Global Studios</h3>
-        <p>45 Market Blvd, Lagos, Nigeria</p>
-        <p>(+234) 701-123-4567</p>
-        <a href="https://vfxglobalstudios.com" target="_blank">fxglobalstudios.com</a>
-        <p><strong>Gold Member</strong></p>
-      </section>
-
-      <section>
-        <img src="images/android-chrome-512x512.webp" alt="vfx Media">
-        <h3>Vfx Media</h3>
-        <p>87 Marina Rd, Lagos, Nigeria</p>
-        <p>(+234) 803-555-1111</p>
-        <a href="https://vfxradershhhubmedia.com" target="_blank">tradershubmedia.com</a>
-        <p><strong>Bronze Member</strong></p>
-      </section>
-
-      <section>
-        <img src="images/android-chrome-192x192.webp" alt="FX Insight Motion">
+    <div id="cards" class="directory-cards">
+      <!-- Cards will be loaded dynamically from JSON by fx-scripts.js -->
         <h3>VFX Insight Motion</h3>
         <p>240 King St, Ibadan, Nigeria</p>
         <p>(+234) 806-555-6789</p>

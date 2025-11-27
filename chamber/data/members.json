@@ -5,7 +5,8 @@
       "address": "45 Market Blvd, Lagos, Nigeria",
       "phone": "(+234) 701-123-4567",
       "website": "https://vfxglobalstudios.com",
-      "image": "images/favicon-16x16.webp",
+      "image": "images/ai-generated-8531104_640.webp",
+      "description": "Full-service VFX studio specializing in cinematic effects and post-production.",
       "membership": "Gold"
     },
     {
@@ -14,6 +15,7 @@
       "phone": "(+234) 803-555-1111",
       "website": "https://vfxradershhhubmedia.com",
       "image": "images/android-chrome-512x512.webp",
+      "description": "Media production and VFX services focused on advertising and short films.",
       "membership": "Bronze"
     },
     {
@@ -22,6 +24,7 @@
       "phone": "(+234) 806-555-6789",
       "website": "https://vfxinsightjjmotion.com",
       "image": "images/android-chrome-192x192.webp",
+      "description": "Creative motion design studio crafting engaging visual storytelling.",
       "membership": "Gold"
     },
     {
@@ -30,6 +33,7 @@
       "phone": "(+234) 701-000-2222",
       "website": "https://bluewavnnevvfx.com",
       "image": "images/download-6.webp",
+      "description": "Boutique VFX studio with expertise in environmental and water simulations.",
       "membership": "Silver"
     },
     {
@@ -38,6 +42,7 @@
       "phone": "(+234) 802-999-3333",
       "website": "https://vfxvisuals.com",
       "image": "images/download.webp",
+      "description": "Smart Visualsfx delivers streamlined pipeline work for commercials and TV.",
       "membership": "Gold"
     },
     {
@@ -45,7 +50,8 @@
       "address": "99 Unity Rd, Kano",
       "phone": "(+234) 805-888-4444",
       "website": "https://pixelhhhprovvfx.com",
-      "image": "images/download.webp",
+      "image": "images/cvfx.webp",
+      "description": "Pixel-focused VFX, specializing in compositing and 2D/3D integration.",
       "membership": "Bronze"
     },
     {
@@ -53,7 +59,8 @@
       "address": "55 Creative Ave, Enugu, Nigeria",
       "phone": "(+234) 808-444-5555",
       "website": "https://motionfggorge.com",
-      "image": "images/download.webp",
+      "image": "images/opi.webp",
+      "description": "MotionForge produces high-end motion graphics and title sequences.",
       "membership": "Gold"
     },
     {
@@ -61,7 +68,8 @@
       "address": "18 Ocean Rd, Port Harcourt",
       "phone": "(+234) 809-222-9999",
       "website": "https://epicvhhvfxframe.com",
-      "image": "images/download.webp",
+      "image": "images/Skyline-VFX-Studio.webp",
+      "description": "EpicFrame Labs focuses on experimental VFX and film collaborations.",
       "membership": "Silver"
     },
     {

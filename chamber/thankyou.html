@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Chamber Join</title>
+  <meta name="description" content="Thank you for joining the Chamber of VFX.">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <script defer src="scripts/menu.js"></script>
+</head>
+<body>
+<header>
+  <h1>Chamber of Vfx Membership</h1>
+  <nav id="main-nav">
+    <button id="menu-btn" aria-expanded="false">☰ Menu</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="members.html">Members</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+    <span aria-hidden="true">›</span>
+    <a href="join.html">Join</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">Thank You</span>
+  </nav>
+
+  <section id="thankyou">
+    <h2>Thank you for your application</h2>
+    <p id="summary-intro">We received your submission. Here are the details you provided:</p>
+    <dl>
+      <dt>First Name</dt>
+      <dd id="out-firstName"></dd>
+      <dt>Last Name</dt>
+      <dd id="out-lastName"></dd>
+      <dt>Email</dt>
+      <dd id="out-email"></dd>
+      <dt>Phone</dt>
+      <dd id="out-phone"></dd>
+      <dt>Business / Organization</dt>
+      <dd id="out-businessName"></dd>
+      <dt>Submitted</dt>
+      <dd id="out-timestamp"></dd>
+    </dl>
+  </section>
+</main>
+<footer>
+  <p>&copy; <span id="year"></span> Chamber of vfx</p>
+</footer>
+<script>
+// footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+function safeText(s){
+  if(!s) return '';
+  return String(s).replace(/[<>]/g,'');
+}
+
+const params = new URLSearchParams(window.location.search);
+document.getElementById('out-firstName').textContent = safeText(params.get('firstName'));
+document.getElementById('out-lastName').textContent = safeText(params.get('lastName'));
+document.getElementById('out-email').textContent = safeText(params.get('email'));
+document.getElementById('out-phone').textContent = safeText(params.get('phone'));
+document.getElementById('out-businessName').textContent = safeText(params.get('businessName'));
+const ts = params.get('timestamp');
+document.getElementById('out-timestamp').textContent = ts ? new Date(ts).toString() : '';
+</script>
+</body>
+</html>

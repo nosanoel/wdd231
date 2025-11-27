@@ -1,14 +1,7 @@
 //  Update Footer Date Automatically
 document.querySelector(".modification").textContent = document.lastModified;
 
-//  Responsive Menu Toggle
-const menuButton = document.querySelector("#menu");
-const navList = document.querySelector(".list");
-
-menuButton.addEventListener("click", () => {
-  navList.classList.toggle("open");
-  menuButton.textContent = navList.classList.contains("open") ? "✖" : "☰";
-});
+// Directory menu is handled centrally in scripts/menu.js
 
 //  Fetch and Display Members from JSON
 async function loadMembers() {
@@ -25,21 +18,24 @@ function displayMembers(members) {
   const cardsContainer = document.getElementById("cards");
   cardsContainer.innerHTML = "";
 
-  members.forEach(member => {
-    const section = document.createElement("section");
-    section.innerHTML = `
-      <img src="${member.image}" alt="${member.name}" loading="lazy" width="200" height="200">
-      <h2>${member.name}</h2>
+  // Only show the first 8 members for assignment
+  members.slice(0, 8).forEach((member, idx) => {
+    const card = document.createElement("div");
+    card.className = `directory-card card${idx+1}`;
+    card.innerHTML = `
+      <img src="${member.image}" alt="${member.name} logo" loading="lazy" width="120" height="120">
+      <h3>${member.name}</h3>
+      <p class="card-desc">${member.description || 'A leading VFX studio/artist in Nigeria.'}</p>
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Phone:</strong> ${member.phone}</p>
-      <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-      <p><strong>Membership:</strong> ${member.membership}</p>
+      <a href="${member.website}" target="_blank" rel="noopener noreferrer" class="card-btn">Learn More</a>
+      <p><strong>${member.membership} Member</strong></p>
     `;
-    cardsContainer.appendChild(section);
+    cardsContainer.appendChild(card);
   });
 
   // Animate cards when they appear
-  const cards = document.querySelectorAll("#cards section");
+  const cards = document.querySelectorAll(".directory-card");
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {

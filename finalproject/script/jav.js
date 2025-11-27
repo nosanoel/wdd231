@@ -32,7 +32,7 @@ async function loadGames() {
 
   } catch (err) {
     console.error("Error fetching JSON:", err);
-    grid.innerHTML = `<p style="color:#f55">Could not load game data.</p>`;
+    grid.innerHTML = `<p class="error-inline">Could not load game data.</p>`;
   }
 }
 

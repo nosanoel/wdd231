@@ -161,3 +161,12 @@ dialog::backdrop{background:rgba(0,0,0,0.6)}
   .hero-title{font-size:1.25rem}
   .footer-inner{flex-direction:column;align-items:flex-start;gap:.5rem}
 }
+
+/* Utilities moved from inline styles */
+.page-pad{padding:2rem 0}
+.loading{display:none;text-align:center;margin:1rem 0}
+.module-demo{padding:1rem 0}
+.module-demo h2{margin-bottom:.5rem}
+.error-msg{color:red;display:none;text-align:center;margin-top:1rem}
+.error-inline{color:#f55}
+.error-inline-strong{color:#f44}

@@ -1,15 +1,4 @@
 // ==========================
-// RESPONSIVE MENU
-// ==========================
-const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.getElementById('main-nav');
-
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  document.body.classList.toggle('menu-open'); // push content down
-});
-
-// ==========================
 // FOOTER YEAR
 // ==========================
 document.getElementById('year').textContent = new Date().getFullYear();

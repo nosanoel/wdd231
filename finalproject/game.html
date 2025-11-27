@@ -35,20 +35,26 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="container" style="padding:2rem 0">
+  <main class="container page-pad">
     <h1>All Games</h1>
     <p>Browse the full game library from our editors.</p>
 
     <!-- Loading Indicator -->
-    <div id="loading" style="display:none; text-align:center; margin:1rem 0;">
+    <div id="loading" class="loading">
       <p>⏳ Loading games...</p>
     </div>
 
     <!-- Game Grid -->
     <div class="grid" id="gameList"></div>
 
+    <!-- Module demo: shows ES module import usage (non-intrusive) -->
+    <section id="module-demo" class="container module-demo">
+      <h2>Module Demo (ES Module)</h2>
+      <div id="moduleDemo" class="grid"></div>
+    </section>
+
     <!-- Error Message -->
-    <p id="errorMsg" style="color:red; display:none; text-align:center; margin-top:1rem;">
+    <p id="errorMsg" class="error-msg">
       ⚠️ Could not load games. Please try again later.
     </p>
   </main>
@@ -59,7 +65,13 @@
       <small>&copy;<span id="year"></span> Kings</small>
     </div>
   </footer>
+</footer>
 
-  
+  <!-- ES Module demo: imports exported function from script/game.js -->
+  <script type="module">
+    import { loadGamesInto } from './script/game.js';
+    // Render a small set into the demo container to show module usage
+    loadGamesInto('moduleDemo');
+  </script>
 </body>
 </html>

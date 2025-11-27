@@ -1,0 +1,109 @@
+/* Chamber Directory Cards — Named Grid Areas, WebP, Hover Effect */
+.directory-cards {
+  display: grid;
+  grid-template-areas:
+    'card1 card2 card3 card4'
+    'card5 card6 card7 card8';
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media (max-width: 1024px) {
+  .directory-cards {
+    grid-template-areas:
+      'card1 card2'
+      'card3 card4'
+      'card5 card6'
+      'card7 card8';
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .directory-cards {
+    grid-template-areas:
+      'card1'
+      'card2'
+      'card3'
+      'card4'
+      'card5'
+      'card6'
+      'card7'
+      'card8';
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Color contrast and accessibility improvements */
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-panel: #181818;
+  --text-light: #f1f1f1;
+  --accent-color: #00c8ff;
+  --accent-hover: #00e4ff;
+}
+
+.directory-card {
+  background: var(--bg-panel, #181818);
+  color: var(--text-light, #f1f1f1);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.directory-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+@media (min-width: 769px) {
+  .directory-card img:hover {
+    filter: brightness(1.2) drop-shadow(0 0 10px var(--accent-color, #00c8ff));
+    transform: scale(1.07) rotate(-2deg);
+  }
+}
+
+.directory-card h3 {
+  margin: 0.5rem 0 0.2rem;
+  color: var(--accent-color, #00c8ff);
+}
+.directory-card p {
+  margin: 0.2rem 0;
+  text-align: center;
+}
+.directory-card .card-desc {
+  font-size: 0.98rem;
+  margin-bottom: 0.7rem;
+}
+.directory-card .card-btn {
+  margin-top: 0.7rem;
+  background: var(--accent-color, #00c8ff);
+  color: var(--bg-dark, #0a0a0a);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.directory-card .card-btn:hover {
+  background: var(--accent-hover, #00e4ff);
+}
+
+/* Assign grid areas */
+.directory-card:nth-child(1) { grid-area: card1; }
+.directory-card:nth-child(2) { grid-area: card2; }
+.directory-card:nth-child(3) { grid-area: card3; }
+.directory-card:nth-child(4) { grid-area: card4; }
+.directory-card:nth-child(5) { grid-area: card5; }
+.directory-card:nth-child(6) { grid-area: card6; }
+.directory-card:nth-child(7) { grid-area: card7; }
+.directory-card:nth-child(8) { grid-area: card8; }

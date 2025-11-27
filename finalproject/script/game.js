@@ -15,6 +15,6 @@ export async function loadGamesInto(id) {
       `)
       .join("");
   } catch (err) {
-    box.innerHTML = `<p style="color:#f44">Could not load games.</p>`;
+    box.innerHTML = `<p class="error-inline-strong">Could not load games.</p>`;
   }
 }

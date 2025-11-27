@@ -25,6 +25,22 @@ a:focus, button:focus {
     }
 }
 
+/* Focus styles for keyboard users */
+:focus-visible {
+    outline: 3px solid #00e5ff;
+    outline-offset: 3px;
+}
+
+/* Skip link default hidden, visible on focus */
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;color:#fff;padding:8px;z-index:1000}
+
+/* Message shown after last visit (moved from inline) */
+#visit-message{
+    text-align:center;
+    margin:1em 0;
+}
+
 header,
 footer {
     background: linear-gradient(90deg, #1b1b2a, #111122);
