@@ -1,26 +1,122 @@
 [
   {
-    "title": "Forza Horizon 5 breaks records",
-    "date": "2025-12-01",
+    "title": "Froza 5 Breaks Racing Records",
     "category": "Racing",
-    "summary": "The latest Forza game is selling faster than any previous installment.",
-    "content": "Full article content goes here. Lorem ipsum dolor sit amet...",
+    "date": "2025-11-28",
+    "summary": "Froza 5 sets new benchmarks for racing games this year.",
+    "content": "The latest installment of Froza has pushed racing simulation to new heights with stunning graphics and realistic physics. Players worldwide are praising its new dynamic weather system and expanded car lineup.",
     "image": "images/fr.jpg"
   },
   {
-    "title": "PUBG updates new season",
-    "date": "2025-12-02",
+    "title": "PUBG Launches New Season",
     "category": "Shooter",
-    "summary": "PUBG players can enjoy a new map, weapons, and battle pass.",
-    "content": "Full article content goes here. Lorem ipsum dolor sit amet...",
+    "date": "2025-11-30",
+    "summary": "PUBG's latest season introduces new maps and weapons.",
+    "content": "PUBG fans are excited for the new season, featuring updated maps, a variety of new weapons, and enhanced gameplay mechanics to keep the battle royale experience fresh and engaging.",
     "image": "images/banner-img-2.jpg"
   },
   {
-    "title": "Minecraft modding community grows",
-    "date": "2025-11-30",
+    "title": "Red Blood 4: Shooter Revolution",
+    "category": "Shooter",
+    "date": "2025-11-25",
+    "summary": "Red Blood 4 redefines the multiplayer shooter genre.",
+    "content": "Red Blood 4 brings next-level graphics, intense multiplayer modes, and an immersive storyline, setting a new standard for online shooters in 2025.",
+    "image": "images/banner-img-3.jpg"
+  },
+  {
+    "title": "Sword and Fairy 7: RPG Epic Returns",
+    "category": "RPG",
+    "date": "2025-11-20",
+    "summary": "The beloved RPG series returns with a new adventure.",
+    "content": "Sword and Fairy 7 continues the epic saga with enhanced graphics, an expanded world, and deep narrative choices that let players shape their journey.",
+    "image": "images/v4.jpg"
+  },
+  {
+    "title": "Blood and Zombies Hits the Action Scene",
+    "category": "Action",
+    "date": "2025-11-18",
+    "summary": "Zombie action reaches new levels of intensity.",
+    "content": "Blood and Zombies offers fast-paced combat, strategic gameplay, and a gripping storyline, making it one of the most talked-about action games this year.",
+    "image": "images/news-2.jpg"
+  },
+  {
+    "title": "Star War: New Adventure Unveiled",
+    "category": "Adventure",
+    "date": "2025-11-15",
+    "summary": "Star War expands its universe with fresh quests.",
+    "content": "Explore new planets, complete challenging missions, and experience a story-driven adventure in the latest Star War release.",
+    "image": "images/news-6.jpg"
+  },
+  {
+    "title": "Minecraft Updates Creative Horizons",
     "category": "Sandbox",
-    "summary": "Thousands of mods are now available for the Minecraft universe.",
-    "content": "Full article content goes here. Lorem ipsum dolor sit amet...",
+    "date": "2025-11-10",
+    "summary": "Minecraft introduces exciting new features for builders.",
+    "content": "The latest update in Minecraft brings new building materials, mobs, and challenges, allowing players to push their creativity even further.",
     "image": "images/banner-img-1.jpg"
+  },
+  {
+    "title": "Simulation Game Sample 8 Excels",
+    "category": "Simulation",
+    "date": "2025-11-08",
+    "summary": "Sample 8 simulation game impresses fans.",
+    "content": "Sample 8 lets players immerse themselves in realistic simulation scenarios, providing a deep and engaging experience for simulation enthusiasts.",
+    "image": "images/news-3.jpg"
+  },
+  {
+    "title": "Strategy Game Sample 9 Dominates",
+    "category": "Strategy",
+    "date": "2025-11-05",
+    "summary": "Sample 9 strategy game challenges tactical minds.",
+    "content": "Sample 9 offers complex strategy gameplay, requiring careful planning and execution to succeed against AI and human opponents.",
+    "image": "images/news-4.jpg"
+  },
+  {
+    "title": "RPG Sample 10 Expands Roleplay",
+    "category": "RPG",
+    "date": "2025-11-02",
+    "summary": "Sample 10 brings immersive RPG storytelling.",
+    "content": "Sample 10 introduces a rich narrative and new character abilities, letting players dive deeper into role-playing adventures.",
+    "image": "images/news-5.jpg"
+  },
+  {
+    "title": "Action Sample 11 Thrills Gamers",
+    "category": "Action",
+    "date": "2025-10-30",
+    "summary": "Sample 11 delivers adrenaline-pumping action.",
+    "content": "With fast-paced combat and challenging levels, Sample 11 keeps action fans on the edge of their seats.",
+    "image": "images/news-7.jpg"
+  },
+  {
+    "title": "Racing Sample 12 Races Ahead",
+    "category": "Racing",
+    "date": "2025-10-28",
+    "summary": "Sample 12 racing game excites competitive players.",
+    "content": "Sample 12 features realistic car physics and new tracks, offering an exhilarating racing experience for fans.",
+    "image": "images/v2.jpg"
+  },
+  {
+    "title": "Puzzle Sample 13 Challenges Minds",
+    "category": "Puzzle",
+    "date": "2025-10-25",
+    "summary": "Sample 13 provides brain-teasing fun.",
+    "content": "With innovative puzzles and challenging levels, Sample 13 keeps players engaged and thinking strategically.",
+    "image": "images/news-8.jpg"
+  },
+  {
+    "title": "Horror Sample 14 Scares Players",
+    "category": "Horror",
+    "date": "2025-10-22",
+    "summary": "Sample 14 delivers terrifying gameplay.",
+    "content": "Sample 14 immerses players in a horror-filled world with jump scares and suspenseful storytelling.",
+    "image": "images/news-9.jpg"
+  },
+  {
+    "title": "Indie Sample 15 Wins Hearts",
+    "category": "Indie",
+    "date": "2025-10-20",
+    "summary": "Sample 15 is the indie game everyone is talking about.",
+    "content": "Sample 15 offers a unique gameplay experience, artistic visuals, and a charming storyline that captivates players.",
+    "image": "images/news-10.jpg"
   }
 ]
