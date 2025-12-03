@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Forza Horizon 5 breaks records",
+    "date": "2025-12-01",
+    "category": "Racing",
+    "summary": "The latest Forza game is selling faster than any previous installment.",
+    "content": "Full article content goes here. Lorem ipsum dolor sit amet...",
+    "image": "images/fr.jpg"
+  },
+  {
+    "title": "PUBG updates new season",
+    "date": "2025-12-02",
+    "category": "Shooter",
+    "summary": "PUBG players can enjoy a new map, weapons, and battle pass.",
+    "content": "Full article content goes here. Lorem ipsum dolor sit amet...",
+    "image": "images/banner-img-2.jpg"
+  },
+  {
+    "title": "Minecraft modding community grows",
+    "date": "2025-11-30",
+    "category": "Sandbox",
+    "summary": "Thousands of mods are now available for the Minecraft universe.",
+    "content": "Full article content goes here. Lorem ipsum dolor sit amet...",
+    "image": "images/banner-img-1.jpg"
+  }
+]
