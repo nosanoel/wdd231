@@ -1,4 +1,4 @@
-// app.js (ES Module) — Week 6 Compliant
+// app.js (ES Module) 
 // Handles: fetch JSON, render 15+ items, localStorage, modal, DOM events
 
 // DOM references
