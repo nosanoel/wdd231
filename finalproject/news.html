@@ -4,55 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kings News — Home</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/bbnnnn.css">
-  <script defer src="script/newtest.js"></script>
+
+  <!--  -->
+  <script type="module" src="script/newtest.js" defer></script>
+
+  <meta name="description" content="Latest gaming news, reviews, and updates.">
 </head>
+
 <body>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="brand">
         <a href="index.html">Kings News</a>
       </div>
+
       <nav class="main-nav">
-        <button id="nav-toggle" aria-expanded="false">☰</button>
+        <button id="nav-toggle" aria-expanded="false" class="nav-toggle" aria-label="Open Menu">☰</button>
+
         <ul id="primary-menu" class="menu" hidden>
           <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="form.html">Submit News</a></li>
           <li><a href="#">Reviews</a></li>
-          <li><a href="#">Videos</a></li>
           <li><a href="#">Gear</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
+  <!-- Main -->
   <main class="site-main container page-pad">
+
     <section class="hero">
       <div class="hero-overlay">
         <h1 class="hero-title">Latest Gaming News</h1>
-        <p class="hero-sub">Stay up-to-date with the hottest stories from the gaming world</p>
+        <p class="hero-sub">Powered by dynamic JSON, modal dialogs & modern ES6 JavaScript</p>
       </div>
     </section>
 
+    <!-- Dynamic JSON Grid -->
+    <h2 class="visually-hidden">News Articles</h2>
     <section id="news-grid" class="grid"></section>
 
     <div class="loading">Loading news...</div>
     <p class="error-msg">Failed to load news.</p>
+
   </main>
 
+  <!-- Modal -->
   <dialog id="news-modal" aria-labelledby="modal-title">
     <h3 id="modal-title"></h3>
     <p id="modal-content"></p>
+
     <menu>
       <button id="modal-close">Close</button>
     </menu>
   </dialog>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <small>&copy; <span id="year"></span> Kings News</small>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
