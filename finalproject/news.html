@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="styles/bbnnnn.css">
 
   <!--  -->
- 
-  <script defer src="script/newtest.js"></script>
+  <script type="module" src="script/newtest.js"></script>
+
   <meta name="description" content="Latest gaming news, reviews, and updates.">
 </head>
 
@@ -59,12 +59,12 @@
 
   <!-- Modal -->
   <dialog id="news-modal" aria-labelledby="modal-title">
-    <h3 id="modal-title"></h3>
+    <h3 id="modal-title">Article Details</h3>
     <p id="modal-content"></p>
 
-    <menu>
+    <div class="modal-actions">
       <button id="modal-close">Close</button>
-    </menu>
+    </div>
   </dialog>
 
   <!-- Footer -->

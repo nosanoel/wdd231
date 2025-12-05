@@ -25,7 +25,7 @@ modalClose.addEventListener("click", () => modal.close());
 
 // -------------------------
 // Load JSON Dynamically
-// Required by rubric: async + try/catch
+//  async + try/catch
 // -------------------------
 async function loadNews() {
   const grid = document.getElementById("news-grid");
