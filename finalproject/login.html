@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign In — Kings</title>
+  <meta name="description" content="Sign in to Kings">
+  <link rel="stylesheet" href="styles/bbnnnn.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <script type="module" src="script/login.js"></script>
+</head>
+<body class="login-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" aria-label="kings home"><span class="brand-name">kings</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="login-main container" id="main">
+    <section class="login-panel" aria-labelledby="signin-heading">
+      <div class="login-card">
+        <div class="login-brand">
+          <h1 id="signin-heading">Sign in to Kings</h1>
+        </div>
+
+        <form id="loginForm" method="get" action="login-action.html" novalidate>
+          <label for="email" class="visually-hidden">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email address" required>
+
+          <label for="password" class="visually-hidden">Password</label>
+          <input id="password" name="password" type="password" placeholder="Password" required>
+
+          <div class="row">
+            <label class="remember"><input type="checkbox" id="remember" name="remember"> Remember me</label>
+            <a class="forgot" href="#">Forgot your password?</a>
+          </div>
+
+          <button class="btn primary" type="submit">Sign In</button>
+
+          <div class="divider"><span>or</span></div>
+
+          <div class="socials">
+            <button type="button" class="btn-social">Continue with Google</button>
+            <button type="button" class="btn-social">Continue with Apple</button>
+          </div>
+
+          <p class="signup">Don't have an account? <a href="#">Create one</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>&copy; <span id="year"></span> Kings</small>
+    </div>
+  </footer>
+
+  <script src="script/site.js" defer></script>
+</body>
+</html>
