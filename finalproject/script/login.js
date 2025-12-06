@@ -1,5 +1,5 @@
 // login.js - client validation + optional localStorage "remember me"
-document.addEventListener('DOMContentLoaded', () => {
+function initLogin() {
   const form = document.getElementById('loginForm');
   if (!form) return;
 
@@ -30,4 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // form uses GET action to login-action.html so no need to preventDefault
   });
-});
+}
+
+export { initLogin };
