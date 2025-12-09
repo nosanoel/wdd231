@@ -3,8 +3,11 @@
 // ===============================
 
 async function loadGames() {
-  const apiUrl = "https://www.freetogame.com/api/games?platform=pc";
+  const apiUrl = "https://www.freetogame.com/api/games?platform=pc"; 
+  
+   
 
+  
   // Use Codetabs proxy (more stable than allorigins)
   const proxyUrl = "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(apiUrl);
 
@@ -17,6 +20,7 @@ async function loadGames() {
   errorMsg.style.display = "none";
   gameList.innerHTML = "";
 
+  
   try {
     const response = await fetch(proxyUrl);
 
@@ -46,11 +50,8 @@ async function loadGames() {
 
   } catch (error) {
     console.error("Error loading games:", error);
-
-    // Hide loading spinner & show error
-    loading.style.display = "none";
-    errorMsg.style.display = "block";
-    errorMsg.textContent = "⚠️ Failed to load games. Please try again later.";
+  
+    errorMsg.textContent = "⚠️  Failed to load games. Please try again later.";
   }
 }
 
@@ -61,3 +62,4 @@ document.addEventListener("DOMContentLoaded", () => {
   loadGames();
   document.getElementById("year").textContent = new Date().getFullYear();
 });
+ 

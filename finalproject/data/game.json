@@ -2,8 +2,8 @@
 [
   {"title":"Froza 5","genre":"Racing","platform":"Windows","price":"$40.44","image":"images/fr.jpg"},
   {"title":"PUBG","genre":"Shooter","platform":"Windows","price":"$40.44","image":"images/banner-img-2.jpg"},
-  {"title":"Red Blood 4","genre":"Shooter","platform":"Windows","price":"$40.44","image":"images/banner-img-3.jpg"},
-  {"title":"Sword and Fairy 7","genre":"RPG","platform":"PC","price":"$23.45","image":"images/v4.jpg"},
+  {"title":"Red Blood 4 ","genre":"Shooter","platform":"Windows","price":"$40.44","image":"images/banner-img-3.jpg"},
+  {"title":"Sword and Fairy 7","genre":"RPG","platform":"PC","price":"$23.45","image":"images/v4.jpg"}, 
   {"title":"Blood and Zombies","genre":"Action","platform":"PC","price":"$23.45","image":"images/news-2.jpg"},
   {"title":"Star War","genre":"Adventure","platform":"PC","price":"$23.45","image":"images/news-6.jpg"},
   {"title":"Minecraft","genre":"Sandbox","platform":"Multi","price":"$25.00","image":"images/banner-img-1.jpg"},
