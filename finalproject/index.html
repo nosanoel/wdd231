@@ -31,7 +31,7 @@
 </head>
 <body>
 
-  <header class="site-header" role="banner">
+  <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <a href="index.html" aria-label="kings home">
@@ -43,7 +43,7 @@
         </a>
       </div>    
 
-      <nav class="main-nav" role="navigation" aria-label="Main">
+      <nav class="main-nav" aria-label="Main">
         <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
           <span class="sr-only">Open menu</span>
           <!-- accessible hamburger icon -->
@@ -78,7 +78,7 @@
     </div>
   </header>
 
-  <main class="site-main" id="main" role="main">
+  <main class="site-main" id="main">
     <!-- hero / video background (keeps it accessible) -->
     <section class="hero">
       <div class="hero-media" aria-hidden="true">
@@ -96,7 +96,7 @@
       </div>
     </section>
 
-    <section class="content container">
+    <div class="content container">
       <aside class="sidebar" aria-labelledby="browse-heading">
         <h2 id="browse-heading" class="visually-hidden">Browse</h2>
 
@@ -164,7 +164,7 @@
           </article>
         </div>
       </section>
-    </section>
+    </div>
 
     <!-- Accessible modal (hidden by default) -->
     <dialog id="detail-modal" aria-labelledby="modal-title">
@@ -176,7 +176,7 @@
     </dialog>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <small>&copy; <span id="year"></span>King — Attributions</small>
       <nav aria-label="Footer">
